@@ -1,5 +1,3 @@
-import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -22,9 +20,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
-import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 
 public class TietokantaGUI extends JFrame {
