@@ -1,6 +1,8 @@
 
 import java.sql.*;
 
+import javax.swing.JOptionPane;
+
 public class toiminnallisuus {
 	
 	//Tietokannan osoite
@@ -39,6 +41,11 @@ public class toiminnallisuus {
 	
 	public static void saveToDB() {
 		
+		//Tarkistetaan syötteen oikeellisuus
+		if(fullName.length()<1 || age.length() <1 || phoneNro.length()<1||address.length()<1) {
+			JOptionPane.showMessageDialog(null, "Incorrect input! Check the input fields!");
+		}
+		else {
 		try {
 			
 			//Yhteys tietokantaan
@@ -56,6 +63,7 @@ public class toiminnallisuus {
 		} catch (SQLException e) {
 			System.out.println("Error!");
 			System.out.println(e);
+		}
 		}
 		
 	}
